@@ -5,8 +5,8 @@
 <!-- <MenuMobile> -->
 
 <a href="/platform" class="text-2xl">Platform</a><br/><br/>
-<a href="/runtime" class="text-2xl">Runtime</a><br/><br/>
-<a href="/playground" class="text-2xl">Playground</a><br/><br/>
+<a href="/features" class="text-2xl">Features</a><br/><br/>
+<a href="/pricing" class="text-2xl">Pricing</a><br/><br/>
 <br/>
 <!--
 <a href="/discord">Discord</a><br/>

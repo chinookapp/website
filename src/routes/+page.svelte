@@ -24,8 +24,8 @@
         <!-- md breakpoint and up-->
         <ul class="hidden md:flex text-black menu menu-horizontal">
             <li><a href="/platform">Platform</a></li>
-            <li><a href="/runtime">Runtime</a></li>
-            <li><a href="/playground">Playground</a></li>
+            <li><a href="/features">Features</a></li>
+            <li><a href="/pricing">Pricing</a></li>
             <!--
             <li>
                 <a href="/">
