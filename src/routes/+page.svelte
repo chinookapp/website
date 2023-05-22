@@ -11,18 +11,18 @@
     let visible = writable(false);
 </script>
   
-<div class="navbar w-full bg-white ">
+<div class="navbar w-full m-0 p-0">
     <div class="flex-1">
         <Logo />
     </div>
-    <div class="flex-none justify-end">
+    <div class="flex-none justify-end ">
         <!-- hides above sm breakpoint -->
-        <div class="inline md:hidden h-full z-50" on:click={() => $visible = !$visible } on:keypress={() => $visible = !$visible }>
+        <div class="inline md:hidden h-full z-50 bg-inherit " on:click={() => $visible = !$visible } on:keypress={() => $visible = !$visible }>
             <MenuIcon />
         </div>
 
         <!-- md breakpoint and up-->
-        <ul class="hidden md:flex text-black menu menu-horizontal px-1">
+        <ul class="hidden md:flex text-black menu menu-horizontal">
             <li><a href="/platform">Platform</a></li>
             <li><a href="/runtime">Runtime</a></li>
             <li><a href="/playground">Playground</a></li>
@@ -48,7 +48,7 @@
 </div>
   
 {#if $visible}
-    <div class="drawerMenu bg-gray-200 h-screen w-screen" transition:slide="{{delay: 150, duration: 450, easing: quintOut}}">
+    <div class="drawerMenu" transition:slide="{{delay: 150, duration: 450, easing: quintOut}}">
         <MobileMenu />
     </div>
 {/if}
@@ -59,10 +59,13 @@
         position: absolute;
         top: 0;
         left: 0;
+        width: 104%;
+        height: 100vh;
         color: #fff;
         z-index: 4;
-        overflow: hidden;
         padding-top: 80px;
+        overflow: hidden;
         text-align: center;
+        background-color: #efefef;
     }
 </style>
